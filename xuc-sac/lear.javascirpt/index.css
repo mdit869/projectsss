@@ -1,0 +1,193 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{  
+    position: relative;  
+    background: linear-gradient(120deg, rgb(189, 37, 98), rgb(0, 255, 179));
+}
+
+
+#container{
+    overflow: auto;
+    height: 200vw;    
+}
+
+
+#container2{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.calculator{
+    display: grid;
+}
+
+.calculator .calcu{
+    text-align: end;
+    color: plum;
+}
+.calculator .calcu1{
+    text-align: end;
+    color: plum;
+}
+
+
+.calculator input{
+    outline: none;
+    padding: 8px 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.display,
+.display1{
+    border-radius: 10px 10px 0 0 ;
+}
+
+.calculator .calcu {
+    font-size: 32px;
+    border-radius: 0 0 10px 10px;
+}
+.calculator .calcu1 {
+    font-size: 32px;
+    border-radius: 0 0 10px 10px;
+}
+
+.cellContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cell,
+.cell2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid pink;
+    color: pink;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    box-shadow: inset 5px 5px 5px rgba(203, 28, 156, 0.5),
+    inset -5px -5px 5px rgba(203, 28, 156, 0.5),
+    5px 5px 5px rgba(124, 11, 94, 0.5);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cell2{
+    box-shadow: inset 5px 5px 5px rgba(243, 237, 241, 0.5),
+    inset -5px -5px 5px rgba(247, 240, 245, 0.5),
+    5px 5px 5px rgba(245, 241, 244, 0.5);
+    color: white;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cell5{
+    color: coral;
+
+}
+.celse,
+.celse2{
+    padding: 30px;
+    background-color: palevioletred;
+    border-radius: 20px;
+}
+.celse2{
+    background-color: rgb(52, 46, 49);
+}
+#cell1,
+#cell5,
+#cell2{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column:span 2;
+    width: 140px;
+}
+#cell1{
+    border-radius:20px;
+    color: rgb(124, 178, 207);
+    font-size: 50px;
+}
+#cell2{
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+@keyframes move{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10%{
+        opacity: 1;
+
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(200vh);
+    }
+  
+}
+
+@keyframes move1 {
+    0%{
+        opacity: 0;
+        /* transform: translateY(0); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+       
+    }  25%{
+       opacity: 0.5;
+       transform: scale(1);
+       /* transform: transform(20px); */
+    }
+    50%{
+        opacity: 1;
+        /* transform: translateY(50vh); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+    }
+    75%{
+        opacity: 0.5;
+        /* transform: translateY(50vh); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+    }
+   
+    90%{
+        opacity: 0.26;
+        /* transform: translateY(50vh); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+    }   
+    100%{
+       opacity: 0;
+       /* transform: translateY(50vh); */
+        transform: translate(200vh);
+        transform: scale(1);
+       /* transform: transform(10px); */
+   }
+ 
+
+
+}

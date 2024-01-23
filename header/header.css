@@ -1,0 +1,52 @@
+body{
+    background-color: #2a2627;
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move {
+    0%{
+        opacity: 1;
+        /* transform: translateY(0); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+       
+    }  25%{
+       opacity: 0.5;
+       transform: scale(1);
+       /* transform: transform(20px); */
+       color: aquamarine;
+    }
+    50%{
+        opacity: 1;
+        /* transform: translateY(50vh); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+    }
+    75%{
+        opacity: 0.5;
+        /* transform: translateY(50vh); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+    }
+   
+    90%{
+        opacity: 0.26;
+        /* transform: translateY(50vh); */
+        transform: scale(1);
+        /* transform: transform(10px); */
+    }
+   
+    
+  
+    100%{
+       opacity: 0;
+       /* transform: translateY(50vh); */
+       transform: scale(1);
+       /* transform: transform(10px); */
+   }
+   
+}
